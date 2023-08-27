@@ -1,10 +1,26 @@
 {
   "version": 1,
   "canisters": {
-    "backend": {
+    "configuration": {
       "type": "rust",
-      "package": "backend",
-      "candid": "src/backend/backend.did"
+      "package": "configuration",
+      "candid": "src/configuration/can.did",
+      "optimize": "size",
+      "gzip": true
+    },
+    "individual_user": {
+      "type": "rust",
+      "package": "individual_user",
+      "candid": "src/individual_user/can.did",
+      "optimize": "size",
+      "gzip": true
+    },
+    "user_index": {
+      "type": "rust",
+      "package": "user_index",
+      "candid": "src/user_index/can.did",
+      "optimize": "size",
+      "gzip": true
     }
   },
   "defaults": {

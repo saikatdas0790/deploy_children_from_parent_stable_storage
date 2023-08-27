@@ -1,7 +1,11 @@
-#[candid::candid_method(query)]
-#[ic_cdk::query]
-fn greet(name: String) -> String {
-    format!("Hello, {}!", name)
+use std::cell::RefCell;
+
+use data::CanisterData;
+
+mod data;
+
+thread_local! {
+    static CANISTER_DATA: RefCell<CanisterData> = RefCell::default();
 }
 
 #[cfg(test)]

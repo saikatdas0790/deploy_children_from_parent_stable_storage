@@ -1,8 +1,9 @@
 [workspace]
 resolver = "2"
 
-members = ["src/backend"]
+members = ["src/configuration", "src/individual_user", "src/user_index"]
 
 [workspace.dependencies]
 candid = "0.9.3"
 ic-cdk = "0.10.0"
+serde = "1.0.188"

@@ -1,0 +1,1 @@
+service : { canister_1_greet : () -> (text) query }
