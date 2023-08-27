@@ -2,7 +2,9 @@ use std::cell::RefCell;
 
 use data::CanisterData;
 
+mod canister_loader;
 mod data;
+mod util;
 
 thread_local! {
     static CANISTER_DATA: RefCell<CanisterData> = RefCell::default();

@@ -10,3 +10,4 @@ dfx build user_index
 dfx build configuration
 
 dfx canister install configuration --mode auto
+dfx canister call configuration save_canister_wasm '(blob )'

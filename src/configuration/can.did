@@ -1,1 +1,2 @@
-service : { greet : (text) -> (text) query }
+type Result = variant { Ok; Err : text };
+service : { save_canister_wasm : (vec nat8) -> (Result) }

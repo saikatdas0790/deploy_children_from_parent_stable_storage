@@ -5,5 +5,5 @@ pub mod wasm_store;
 
 #[derive(Default)]
 pub struct CanisterData {
-    canister_store: CanisterStore,
+    pub canister_store: CanisterStore,
 }
